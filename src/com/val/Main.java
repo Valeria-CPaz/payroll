@@ -6,23 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        Employee e = new Employee("Valeria", "Paz", "Val21214");
+        SalariedEmployee se = new SalariedEmployee("Dino", "Silva Sauro", "12345");
+        BasePlusCommisionEmployee be = new BasePlusCommisionEmployee("What", "Ever", "44444");
+        CommisionEmployee ce = new CommisionEmployee("Ya", "hoo", "4321");
+        HourlyEmployee he = new HourlyEmployee("Ce", "Jura", "555666");
 
-        String firstName = input.nextLine();
-        String lastName = input.nextLine();
-        int socialSecurityNumber = input.nextInt();
 
-        double wage = 10.25;
-        double salariedEmployee = 40*wage;
-        double hourlyEmployee = wage;
-
-        System.out.print("Choose your employee type");
-        System.out.println("1 - Salaried Employee");
-        System.out.println("2 - Hourly Employee");
-        System.out.println("3 - Commission Employee");
-        System.out.println("4 - Salaried - Commission Employee");
-
-        
-
+        System.out.println(e.toString());
+        System.out.println(se.toString());
+        System.out.println(be.toString());
+        System.out.println(ce.toString());
+        System.out.println(he.toString());
     }
+
 }
